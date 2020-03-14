@@ -2,6 +2,7 @@ FROM rocker/rstudio:3.6.2
 
 # as of 2020-03-02, rocker/rstudio:latest seems to point to 3.6.1 which pulls in globals 0.12.4, too old for future, 
 
+# kubectl is only needed for monitoring/diagnostics. 
 RUN apt-get update && \
     apt-get install -y curl && \
     curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl && \

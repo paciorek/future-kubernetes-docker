@@ -17,7 +17,7 @@ The container image was created on Docker Hub like this:
 ```
 docker login --username=paciorek 
 docker build -t future .
-docker tag future paciorek/future-kubernetes:0.1
+docker tag future paciorek/future-kubernetes:0.2
 docker push paciorek/future-kubernetes
 ```
 
