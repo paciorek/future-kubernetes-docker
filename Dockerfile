@@ -9,7 +9,7 @@ RUN apt-get update && \
     chmod +x ./kubectl && \
     cp kubectl /usr/local/bin
 
-RUN Rscript -e "install.packages('remotes'); remotes::install_github('paciorek/future', ref = 'develop'); install.packages(c('future.apply','doFuture'))"
+RUN Rscript -e "install.packages('remotes'); remotes::install_github('HenrikBengtsson/future', ref = 'develop'); install.packages(c('future.apply','doFuture'))"
 
 COPY setup-kube.R setup-kube.R
 
