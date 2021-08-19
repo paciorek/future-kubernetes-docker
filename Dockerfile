@@ -1,4 +1,4 @@
-FROM rocker/rstudio:4.0.3
+FROM rocker/rstudio:4.1.0
 
 # as of 2020-03-02, rocker/rstudio:latest seems to point to 3.6.1 which pulls in globals 0.12.4, too old for future, 
 
